@@ -18,6 +18,8 @@
 
 # Objects -- Objects are entities that allows you to store & organize data using Key:Vale pairs in {}
 
+1. Creating Objects using Object Literals & Constructor
+
 eg: 
 
 const person = {
@@ -25,3 +27,43 @@ const person = {
   age: 25,
   gender: "male"
 };
+
+Constructor function - uses regular functions used with 'new' keyword to create instances of object.
+
+eg:
+
+function Person(name, age, gender) {
+  this.name = name;
+  this.age = age;
+  this.gender = gender;
+}
+
+const Alex = new Person ('Alex', 26, 'Male');
+
+2. Accessing Object Properties
+
+>> Using Dot notation --- console.log(person.name);
+
+>> Using Bracket notation --- console.log(person['name']);
+
+3. Modifying Objects --- Can modify objects using assignment operators
+
+eg: 
+person.age = 26;
+
+or
+
+person['name'] = 'Peter';
+
+4. Adding & Deleting Object Properties
+
+eg:
+
+*add
+
+person.city = 'london';
+
+*delete
+
+delete person.city;
+
