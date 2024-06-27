@@ -357,3 +357,39 @@ for (let i = 0; i < 3; i++) {
     console.log(`i = ${i}, j = ${j}`);
 }
 }
+
+# Control flow Statements
+
+1. if
+2. else if
+3. else
+4. switch
+
+1. if 
+
+if (condition) {
+  // code to be executed if the condition is true
+}
+
+eg:
+
+if (x > 0) {
+  console.log("x is positive");
+} else if (x < 0) {
+  console.log("x is negative");
+} else {
+  console.log("x is zero");
+}
+
+or
+
+switch (x) {
+  case 0:
+  console.log("x is zero");
+  break;
+  case 1:
+  console.log("x is one");
+  break;
+  default:
+  console.log("x is neither zero nor one");
+}
