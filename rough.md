@@ -7,3 +7,21 @@
 ## JavaScript is prototype based -- objects can inherits properties & behaviours of other objects.
 
 ## Its a functional programming language - we can write code using functions.
+
+# There are 6 types of primitive data types in JS as listed beliw
+1. undefined 
+2. null
+3. string
+4. number
+5. boolean
+6. symbol
+
+# Objects -- Objects are entities that allows you to store & organize data using Key:Vale pairs in {}
+
+eg: 
+
+const person = {
+  name: "Alex",
+  age: 25,
+  gender: "male"
+};
