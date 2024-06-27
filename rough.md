@@ -67,3 +67,37 @@ person.city = 'london';
 
 delete person.city;
 
+5. Iterating over object properties -- using loop (for in)
+
+eg:
+
+for (let key in Person) {
+  console.log(key + ':' + person[key]);
+}
+
+>> built in method is using Object.keys()
+
+eg:
+
+Object.keys(person),forEach(
+  key => {
+    console.log(key + ':' person[key]);
+  }
+);
+
+6. Object Methods -- Objects can also have methods, which are function assigned as properties. These methods can perform actions or computations.
+
+eg:
+
+const calculator = {
+  add : function (a, b) {
+    return a+b;
+  },
+  multiply : function (a, b) {
+    return a*b;
+  },
+  subract : function (a,b) {
+    return a-b;
+  },
+  console.log(calculator.add(5,3));
+}
