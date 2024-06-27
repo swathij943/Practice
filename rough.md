@@ -267,3 +267,93 @@ console.log(numbers);
 
 o/p -- [5, 4, 3, 2, 1];
 
+
+
+# Loops in JS
+
+There are several types of loops in JS
+
+1. for loop
+2. for...in loop
+3. for...of loop
+4. while loop
+5. do...while loop
+
+
+1. For loop is used when you know in advance how many times to execute a pgm. -- repetition control loop
+
+eg:
+
+for (initilization; condition; increment) {
+  // code to be executed
+}
+
+ie,
+
+for (let i = 0; i<5; i++) {
+  console.log(i);
+}
+
+2. for...in loop -- used to iterate over the properties of an Object.
+
+for (let key in object) {
+  // code to be executed
+}
+
+ie, 
+
+const person = {
+  name: 'John',
+  age: 30,
+  city: 'New York'
+};
+for (let key in person) {
+  console.log(key + ":" + person[key]);
+}
+
+3. for...of loop -- used to iterate over the values of an iterable array/string/iterable obj
+
+for (let variable/value of iterable) {
+  // code to be executed
+}
+
+ie,
+
+const arr = [1, 2, 3, 4, 5];
+
+for (let value of arr) {
+  console.log(value);
+}
+
+4. while loop -- while loop is used to execute/ repeat a block of code as long as the specific condition becomes true.
+
+while (condition) {
+  // code to be executed
+}
+
+ie, 
+let i = 0;
+while (i < 5) {
+  console.log(i);
+}
+
+5. do..while loop -- its similar to while loop, but it will execute the code block 1st before checking the condition is true, the it will repeat the loop as long as the condition is true.
+
+do {
+  // code to be executed
+}
+while (condition);
+
+ie,
+
+let i = 0;
+do {
+  console.log(i);
+
+6. Nested loops -- can place 1 loop inside other loop.
+
+for (let i = 0; i < 3; i++) {
+  for (let j = 0; j < 3; j++) {
+    console.log(`i = ${i}, j = ${j}`);
+}
+}
